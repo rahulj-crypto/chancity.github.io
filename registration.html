@@ -9,6 +9,7 @@
     <meta name="keywords"
         content="Chancity Sports Club, Tournament Registration, Kabaddi, Karnataka, Team Registration">
     <title>Tournament Registration | Chancity Sports Club</title>
+    <link rel="icon" type="image/png" href="assets/cropped_circle_image.png">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/premium-effects.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -31,6 +32,7 @@
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="teams.html">Teams & Coaches</a></li>
                     <li><a href="tournaments.html">Tournaments</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
                     <li><a href="registration.html" class="active">Register</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
@@ -40,11 +42,12 @@
                             class="fab fa-youtube"></i></a>
                     <a href="https://www.instagram.com/chan_city_sports_club/?hl=en" aria-label="Instagram"><i
                             class="fab fa-instagram"></i></a>
-                    <div class="hamburger">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </nav>
         </div>
     </header>
@@ -72,8 +75,7 @@
                 <p class="tournament-subtitle">Team Registration Form</p>
                 <p style="max-width: 700px; margin: 0 auto;">
                     Complete the form below to register your team for the upcoming tournament.
-                    All fields marked with * are required. You will receive a confirmation email
-                    upon successful registration.
+                    All fields marked with * are required.
                 </p>
             </div>
         </div>
@@ -204,11 +206,11 @@
 
                 <!-- Submit Button -->
                 <div class="form-submit">
-                    <button type="submit" class="btn btn-primary">
+                    <button type="submit" class="btn btn-primary" id="submitBtn">
                         <i class="fas fa-paper-plane"></i> Submit Registration
                     </button>
-                    <p style="color: #666; font-size: 0.85rem; margin-top: 15px;">
-                        A confirmation email will be sent to the provided email address upon successful registration.
+                    <p style="color: #666; font-size: 0.85rem; margin-top: 15px;" id="submitMessage">
+                        Please ensure all information is accurate before submitting.
                     </p>
                 </div>
             </form>
@@ -288,7 +290,7 @@
                             <span class="logo-motto">Ready To Fight</span>
                         </div>
                     </div>
-                    <p>The official Kabaddi team of Karnataka Government School, dedicated to nurturing champions
+                    <p>The official Kabaddi team of G.H.P.S Government School, dedicated to nurturing champions
                         through discipline, teamwork, and competitive excellence.</p>
                 </div>
                 <div class="footer-links">
@@ -298,6 +300,7 @@
                         <li><a href="about.html">About Us</a></li>
                         <li><a href="teams.html">Teams & Coaches</a></li>
                         <li><a href="tournaments.html">Tournaments</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
                         <li><a href="registration.html">Register</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
@@ -341,7 +344,7 @@
     <script src="js/main.js"></script>
     <script src="js/error-handlers.js"></script>
     <script src="js/scroll-animations.js"></script>
-    <script src="js/registration-handler.js"></script>
+    <script src="js/registration-handler-v2.js"></script>
 </body>
 
 </html>

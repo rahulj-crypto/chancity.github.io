@@ -261,7 +261,7 @@ header {
 
 /* Hero Section */
 .hero {
-    background-image: ('c:\Users\rahul\Downloads\WhatsApp Video 2026-01-28 at 5.00.44 PM.mp4') center/cover no-repeat;
+    background: var(--gradient-hero);
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -940,6 +940,13 @@ footer {
 
     .hamburger {
         display: flex;
+        background-color: var(--secondary-color);
+        padding: 8px;
+        border-radius: 6px;
+    }
+
+    .hamburger span {
+        background-color: var(--background-dark);
     }
 
     .nav-links {
@@ -996,6 +1003,11 @@ footer {
     }
 
     .footer-about .logo {
+        justify-content: center;
+    }
+
+    /* Center footer social icons on mobile */
+    .footer-contact .social-icons {
         justify-content: center;
     }
 
