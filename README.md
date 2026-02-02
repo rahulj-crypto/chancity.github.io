@@ -4,7 +4,7 @@
 
 ## About
 
-Chancity Sports Club is the official Kabaddi team of a Karnataka Government School, sanctioned by the Karnataka Sports Federation. This website serves as the digital presence for the club, providing information about the team, tournaments, and registration for the annual Chancity Open Kabaddi Tournament.
+Chancity Sports Club is the official Kabaddi team of a G.H.P.S Government School, sanctioned by the Karnataka Sports Federation. This website serves as the digital presence for the club, providing information about the team, tournaments, and registration for the annual Chancity Open Kabaddi Tournament.
 
 ## Features
 
@@ -103,7 +103,7 @@ This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENS
 
 **Chancity Sports Club**
 - Email: info@chancitysportsclub.com
-- Location: Karnataka Government School, Karnataka, India
+- Location: G.H.P.S Government School, Karnataka, India
 
 ---
 
