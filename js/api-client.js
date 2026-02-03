@@ -7,7 +7,7 @@
 // API Configuration
 const API_CONFIG = {
     // Update this URL after deploying to Render
-    baseURL: 'http://localhost:8000', // Development URL
+    baseURL: ' https://gitback-mqnw.onrender.com', // Development URL
     // Production URL (uncomment after deployment):
     // baseURL: 'https://your-app-name.onrender.com',
 
