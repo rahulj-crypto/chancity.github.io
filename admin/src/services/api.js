@@ -5,9 +5,12 @@ import axios from 'axios';
  * Handles all HTTP requests to the backend
  */
 
+// Get API URL from environment or use production URL
+const API_BASE_URL = import.meta.env.VITE_API_URL || 'https://chancity-backend.onrender.com';
+
 // Create axios instance
 const api = axios.create({
-    baseURL: '/api',
+    baseURL: API_BASE_URL,
     timeout: 15000,
     headers: {
         'Content-Type': 'application/json'
@@ -50,49 +53,49 @@ export const adminApi = {
         if (search) queryParams.append('search', search);
         if (status) queryParams.append('status', status);
 
-        return api.get(`/admin/registrations?${queryParams.toString()}`);
+        return api.get(`/api/admin/registrations?${queryParams.toString()}`);
     },
 
     /**
      * Get single registration by ID
      */
     getRegistration: async (id) => {
-        return api.get(`/admin/registrations/${id}`);
+        return api.get(`/api/admin/registrations/${id}`);
     },
 
     /**
      * Update registration status
      */
     updateRegistrationStatus: async (id, status) => {
-        return api.patch(`/admin/registrations/${id}`, { status });
+        return api.patch(`/api/admin/registrations/${id}`, { status });
     },
 
     /**
      * Delete registration
      */
     deleteRegistration: async (id) => {
-        return api.delete(`/admin/registrations/${id}`);
+        return api.delete(`/api/admin/registrations/${id}`);
     },
 
     /**
      * Get dashboard statistics
      */
     getStats: async () => {
-        return api.get('/admin/stats');
+        return api.get('/api/admin/stats');
     },
 
     /**
      * Get application settings (registration status, etc.)
      */
     getSettings: async () => {
-        return api.get('/admin/settings');
+        return api.get('/api/admin/settings');
     },
 
     /**
      * Update application settings
      */
     updateSettings: async (data) => {
-        return api.patch('/admin/settings', data);
+        return api.patch('/api/admin/settings', data);
     }
 };
 

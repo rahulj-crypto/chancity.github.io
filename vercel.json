@@ -1,0 +1,14 @@
+{
+  "redirects": [
+    {
+      "source": "/admin",
+      "destination": "https://chancity-admin.onrender.com",
+      "permanent": false
+    },
+    {
+      "source": "/admin/(.*)",
+      "destination": "https://chancity-admin.onrender.com/$1",
+      "permanent": false
+    }
+  ]
+}

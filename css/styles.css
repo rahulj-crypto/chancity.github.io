@@ -628,7 +628,7 @@ header {
 .form-group label {
     display: block;
     margin-bottom: 8px;
-    font-weight: 600;
+    font-weight: 700;
     color: var(--text-dark);
 }
 
